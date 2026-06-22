@@ -24,10 +24,6 @@ Requires `playwright` to be installed (already in `node_modules`/`package.json`)
 
 ## Screenshots
 
-<!-- Paste before/after screenshots here -->
+**Before changing Number of Employees :**
 
-**Before submit:**
-
-
-**Thank-you page:**
-
+**After changing Number of Employees :**
