@@ -1,0 +1,44 @@
+a. Test this UI mock-up, can you find any problems with this screen? (Please pay attention to all functional aspects such as Security, Usability, Performance, etc.).
+
+1. first of all the customer informatiom and the card information are both in the same form.
+it should be seperate cause card information need different harder security (token and auth) then the customer information each we can save in db for sales actions. plus its harder to maintain this kind of code. all the details in one form.
+
+2. No CVV  - its a must in order to be able to pay and for security
+
+3. no country informatiom - its a global company but user can only fill street and city but not country
+
+4. missing currency - write only 30.00
+
+5. no submit button for safe data saving only Continue button
+
+6. Card Number (No dashes or spaces) and Postal Code (no dashes) user dont need to care about formatting the The field should auto strip and format
+
+7. no hint inside the field for user easy understanding what to fill inside (only strict rules)
+
+--------------------------------------------------------------------------------------------------------------------
+
+b. Can you write 2–3 sample test cases for this functionality?
+case 1: system deny payment from expired card
+1. input valid information inside all feilds
+2. input date that already passed such as 01/2025
+3. press "Continue" button
+-> system must deny payment
+
+case 2: check card number field deny invalid input
+1. enter correct card number with dashes like 1223-4561-6545-6545
+-> system must show a real time massage to user and deny this actions.
+
+case 3: check continue press raise an error when required feilds remains empty
+1. leave all required feilds empty
+2. press on continue button 
+-> system must raise an error near or inside each required field 
+
+--------------------------------------------------------------------------------------------------------------------
+c. Can you suggest a product solution for the most severe bug you’ve found?
+
+the bug: missing CVV and country make company lose money and customers wont able to conform the payment and continue button
+solution: 
+1. add CVV field to aprrove the payment
+2. change state of province to country drop down if user choses usa pop extra feild to chose the state
+3. change continue to submit and aprrove that it wont charge user twice when double clicking (regarding the required feilds)
+
