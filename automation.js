@@ -31,7 +31,9 @@ async function main() {
   console.log("\n ✅ Reached thank-you page:", page.url());
   console.log("\n --------------------------\n");
 
-  await page.waitForTimeout(2000);
+  // to test reachung thank you page
+  // await page.waitForTimeout(2000);
+
   await browser.close();
 }
 
