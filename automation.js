@@ -16,8 +16,8 @@ async function main() {
   await page.screenshot({ path: "before-submit.png" });
 
   await page.getByLabel("Number of Employees").selectOption("51-500");
-
-  await page.screenshot({ path: "validate-51-500-change.png" });
+  // test the Number of Employees change
+  // await page.screenshot({ path: "validate-51-500-change.png" });
 
   await page.getByRole("button", { name: "Request a call back" }).click();
 
