@@ -16,6 +16,7 @@ async function main() {
   await page.screenshot({ path: "before-submit.png" });
 
   await page.getByLabel("Number of Employees").selectOption("51-500");
+
   // test the Number of Employees change
   // await page.screenshot({ path: "validate-51-500-change.png" });
 
@@ -30,6 +31,7 @@ async function main() {
   console.log("\n ✅ Reached thank-you page:", page.url());
   console.log("\n --------------------------\n");
 
+  await page.waitForTimeout(2000);
   await browser.close();
 }
 
