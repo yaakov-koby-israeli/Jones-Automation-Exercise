@@ -25,5 +25,9 @@ Requires `playwright` to be installed (already in `node_modules`/`package.json`)
 ## Screenshots
 
 **Before changing Number of Employees :**
+<img width="1280" height="720" alt="before-submit" src="https://github.com/user-attachments/assets/6740f23e-3c26-44e7-8d05-f79b7fcf9cd8" />
+
 
 **After changing Number of Employees :**
+<img width="1280" height="720" alt="validate-51-500-change" src="https://github.com/user-attachments/assets/5abc8d5e-452e-41f4-9b62-39b261bbfd9d" />
+
